@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
         "Source/LocalizeStatic.swift",
         "Source/LocalizeString.swift",
         "Source/LocalizeStrings.swift",
-        "Source/LocalizeUI.swift"
+        "Source/LocalizeUI.swift",
+        "Source/Pluralize.swift"
 
   s.test_spec 'Localize' do |test_spec|
     test_spec.source_files = 'Tests/*.swift'
