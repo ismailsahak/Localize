@@ -9,7 +9,15 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/andresilvagomez/Localize.git", :tag => "2.3.0" }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = "Source/*.swift"
+  s.source_files = "Source/Localize.swift",
+        "Source/LocalizeCommonProtocol.swift",
+        "Source/LocalizeConfig.swift",
+        "Source/LocalizeJson.swift",
+        "Source/LocalizeProtocol.swift",
+        "Source/LocalizeStatic.swift",
+        "Source/LocalizeString.swift",
+        "Source/LocalizeStrings.swift",
+        "Source/LocalizeUI.swift"
 
   s.test_spec 'Localize' do |test_spec|
     test_spec.source_files = 'Tests/*.swift'
